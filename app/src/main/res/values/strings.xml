@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RoomController</string>
+
+    <string name="subscribe">Subscribe</string>
+    <string name="unsubscribe">Unsubscribe</string>
+
+    <string name="subscribeSuccess">Successfully subscribed to measurements topic.</string>
+    <string name="subscribeFail">Failed to subscribe to measurements topic.</string>
+    <string name="unsubscribeSuccess">Successfully unsubscribed from measurements topic.</string>
+    <string name="unsubscribeFail">Failed to unsubscribe from measurements topic.</string>
+
+    <string name="servoPositionTitle">Servo Position: %1$d°</string>
+    <string name="temperatureTitle">Temperature: %1$d °C</string>
+    <string name="humidityTitle">Humidity: %1$d%%</string>
+
+</resources>

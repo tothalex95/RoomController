@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "500642421319",
+    "firebase_url": "https://roomcontroller-94911.firebaseio.com",
+    "project_id": "roomcontroller-94911",
+    "storage_bucket": "roomcontroller-94911.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500642421319:android:3d80399524cd7f56",
+        "android_client_info": {
+          "package_name": "hu.miskolc.uni.iit.roomcontroller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500642421319-r4cu2ceq2lif3teu86rt7mgue5j6irf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9CHSJECpBWixTlHo3fqa_PoFXWJgGRvI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500642421319-r4cu2ceq2lif3teu86rt7mgue5j6irf4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
