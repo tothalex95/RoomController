@@ -13,4 +13,7 @@
     <string name="temperatureTitle">Temperature: %1$d °C</string>
     <string name="humidityTitle">Humidity: %1$d%%</string>
 
+    <string name="notificationContentTitle">New measurement</string>
+    <string name="notificationContentText">A new measurement is available.</string>
+
 </resources>

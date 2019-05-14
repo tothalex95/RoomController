@@ -13,6 +13,7 @@ import androidx.core.app.NotificationCompat
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
 import hu.miskolc.uni.iit.roomcontroller.MainActivity
+import hu.miskolc.uni.iit.roomcontroller.R
 
 class MyFirebaseMessagingService : FirebaseMessagingService() {
 
@@ -46,12 +47,13 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
         val defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
         val notificationBuilder = NotificationCompat.Builder(this, "MyChannel")
-            .setContentTitle("MyContentTitle")
-            .setContentText("MyContentText")
+            .setContentTitle(getString(R.string.notificationContentTitle))
+            .setContentText(getString(R.string.notificationContentText))
             .setAutoCancel(true)
             .setSound(defaultSoundUri)
             .setContentIntent(pendingIntent)
             .setColor(Color.CYAN)
+            .setSmallIcon(R.drawable.notification_icon_background)
 
         val notificationManager = getSystemService(NotificationManager::class.java)
 
