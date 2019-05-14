@@ -13,14 +13,18 @@ class MeasurementViewModel(
 
     private val measurement: MutableLiveData<Measurement> by lazy {
         MutableLiveData<Measurement>().also {
-            getMeasurement(
-                onSuccess = {measurement.value = it},
-                onError = {},
-                params = Any()
-            )
+            refreshMeasurement()
         }
     }
 
     fun measurement(): LiveData<Measurement> = measurement
+
+    fun refreshMeasurement() {
+        getMeasurement(
+                onSuccess = {measurement.value = it},
+                onError = {},
+                params = Any()
+        )
+    }
 
 }

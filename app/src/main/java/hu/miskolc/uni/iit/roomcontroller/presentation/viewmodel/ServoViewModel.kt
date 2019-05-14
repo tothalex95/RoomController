@@ -13,11 +13,7 @@ class ServoViewModel(
 
     private val servoPosition: MutableLiveData<ServoPosition> by lazy {
         MutableLiveData<ServoPosition>().also {
-            getServoPosition(
-                    onSuccess = { servoPosition.value = it },
-                    onError = {},
-                    params = Any()
-            )
+            refreshServoPosition()
         }
     }
 
@@ -28,6 +24,14 @@ class ServoViewModel(
                 onSuccess = { this.servoPosition.value = servoPosition },
                 onError = {},
                 params = servoPosition
+        )
+    }
+
+    fun refreshServoPosition() {
+        getServoPosition(
+                onSuccess = { servoPosition.value = it },
+                onError = {},
+                params = Any()
         )
     }
 

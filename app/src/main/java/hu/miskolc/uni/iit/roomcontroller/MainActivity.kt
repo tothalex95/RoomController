@@ -69,6 +69,7 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
 
         subscribeButton.setOnClickListener(subscribeButtonOnClickListener)
         unsubscribeButton.setOnClickListener(unsubscribeButtonOnClickListener)
+        refreshButton.setOnClickListener(refreshButtonOnClickListener)
 
         servoPositionSeekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) = Unit
@@ -144,6 +145,11 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
                             Toast.LENGTH_LONG
                     ).show()
                 }
+    }
+
+    private val refreshButtonOnClickListener = View.OnClickListener {
+        measurementViewModel.refreshMeasurement()
+        servoViewModel.refreshServoPosition()
     }
 
     override fun getLifecycle(): Lifecycle {
